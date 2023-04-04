@@ -104,9 +104,25 @@ h4:hover{
   display: none;
   transition: animation 800ms ease;
 }
+
 .show .info{
   display: block;
   animation:slowdown 2s ease;
+}
+.box2 .info{
+  display: block;
+}
+.show.box2 .info{
+  display: none;
+  
+}
+.box2 h4{
+ font-weight: 700;
+  
+}
+.show.box2 h4{
+ font-weight: 400;
+  
 }
 @keyframes slowdown {
   0%{
@@ -133,7 +149,9 @@ h4:hover{
 .show .arrow-down{
   transform: rotate(180deg);
 }
-
+.show.box2 .arrow-down{
+  transform: rotate(0);
+}
 
 /* CONTAINER IMAGE */
 .container-img{
