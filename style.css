@@ -54,6 +54,20 @@ body{
   margin-inline: auto;
   gap:2rem;
   position: relative;
+  animation: opacity 2s ease-in-out;
+}
+@keyframes opacity {
+  0%{
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+  80%{
+    opacity: 0.8;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .content{
   padding: clamp(3rem,3vw,3.5rem);
