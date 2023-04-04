@@ -149,6 +149,9 @@ h4:hover{
 .show .arrow-down{
   transform: rotate(180deg);
 }
+.box2 .arrow-down{
+  transform: rotate(180deg);
+}
 .show.box2 .arrow-down{
   transform: rotate(0);
 }
