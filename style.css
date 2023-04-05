@@ -48,11 +48,11 @@ body{
   display: grid;
   grid-template-columns: 1fr;
   background-color: #fff;
-  width: clamp(35rem,90%,100rem);
+  width: clamp(30rem,95%,100rem);
   padding: clamp(3rem,3vw,3.5rem);
   border-radius: 2rem;
   margin-inline: auto;
-  gap:2rem;
+
   position: relative;
   animation: opacity 2s ease-in-out;
 }
@@ -69,9 +69,7 @@ body{
     transform: translateX(0);
   }
 }
-.content{
-  padding: clamp(3rem,3vw,3.5rem);
-}
+
 .flex{
   display: flex;
   justify-content: space-between;
@@ -209,17 +207,25 @@ h4:hover{
   .container{
     grid-template-columns: repeat(2,1fr);
    z-index: 1;
-   /* overflow:hidden; */
+
    padding: 0;
+   gap: 2rem;
   }
   .container::before{
     content:url(./images/illustration-box-desktop.svg);
     position: absolute;
-    top:60%;
-    left:-2.5%;
+    top:61%;
+    left:-2%;
     transform: translate(-50%,-50%);
     z-index: 1000;
     
+  }
+  .content{
+    padding: clamp(4.5rem,5vw,5.8rem) clamp(5rem,5vw,6rem);
+    padding-left: 0;
+  }
+  h1{
+    text-align: left;
   }
   .container-img{
     overflow: hidden;
@@ -234,17 +240,17 @@ h4:hover{
 }
 .img-illustration-desktop{
   top: 50%;
-  left:calc(15rem - 1.5rem);
-  max-width:43rem;
-  height:32rem;
+  left:calc(18rem - 3.5rem);
+  max-width:45rem;
+  height:35rem;
   z-index: 100;
  
  
 }
 .img-pattern-desktop{
-  max-width: 71rem;
+  max-width: 66rem;
   
-  left:-1%; 
+  left:calc(7.6rem - 3.5rem); 
 }
 
    
