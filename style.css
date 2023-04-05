@@ -111,16 +111,17 @@ h4:hover{
 }
 .box2 .info{
   display: block;
+  animation:slowdown 2s ease;
 }
-.show.box2 .info{
+.active.box2 .info{
   display: none;
-  
+  transition: animation 800ms ease;
 }
 .box2 h4{
  font-weight: 700;
   
 }
-.show.box2 h4{
+.active.box2 h4{
  font-weight: 400;
   
 }

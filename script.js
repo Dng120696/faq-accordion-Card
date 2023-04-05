@@ -10,6 +10,7 @@ for(let i = 0;i < box.length;i++){
   box[i].addEventListener('click', () =>{
 
     box[i].classList.toggle('show');
+    box[i].classList.toggle('active');
   });
 }
 
