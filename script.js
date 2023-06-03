@@ -1,18 +1,22 @@
 'use strict';
+const boxes = document.querySelectorAll('.box');
 
-const box = document.querySelectorAll('.box');
+boxes.forEach(box => {
+  const header = box.querySelector('.boxes');
+  const info = box.querySelector('.info');
+  
+  header.addEventListener('click', function() {
+    box.classList.toggle('active');
+    info.style.display = info.style.display === 'block' ? 'none' : 'block';
 
-
-
-// console.log(boxes);
-
-for(let i = 0;i < box.length;i++){
-  box[i].addEventListener('click', () =>{
-
-    box[i].classList.toggle('show');
-    box[i].classList.toggle('active');
+    // Close other open boxes
+    boxes.forEach(otherBox => {
+      if (otherBox !== box) {
+        otherBox.classList.remove('active');
+        const otherInfo = otherBox.querySelector('.info');
+        otherInfo.style.display = 'none';
+      }
+    });
   });
-}
-
-
+});
 
